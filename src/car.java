@@ -1,12 +1,16 @@
 public class car extends Vehicle {
     public car (String brand, String model, Double price) {
-        super (brand, model, price);
+
+        super(brand, model, price);
     }
-    public void startEngine(){
-        System.out.println("Engine is started");
+    @Override
+    public void startEngine() {
+        System.out.println(brand + " " + model + "의 시동을 켜고 달립니다.");
     }
-    public void stopEngine(){
-        System.out.println("Engine is stopped");
+
+    @Override
+    public void stopEngine() {
+        System.out.println(brand + " " + model + "의 시동을 끕니다.");
     }
 
 }
