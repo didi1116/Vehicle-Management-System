@@ -1,6 +1,6 @@
-public class car extends Vehicle {
-    public car (String brand, String model, Double price) {
-        super (brand, model, price);
+public class truck extends Vehicle{
+    public truck(String brand, String model, double price){
+
     }
     public void startEngine(){
         System.out.println("Engine is started");
@@ -8,5 +8,4 @@ public class car extends Vehicle {
     public void stopEngine(){
         System.out.println("Engine is stopped");
     }
-
 }
