@@ -1,5 +1,5 @@
 abstract class Vehicle {
-    String brend;
+    String brand;
     String model;
     Double price;
 
