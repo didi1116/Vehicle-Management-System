@@ -14,6 +14,6 @@ abstract class Vehicle {
         System.out.println("Price: " + price);
     }
 
-    abstract  void startEngine();
-    abstract void  stopEngine();
+    abstract void startEngine();
+    abstract void stopEngine();
 }
