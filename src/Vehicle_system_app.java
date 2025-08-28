@@ -27,7 +27,8 @@ public class Vehicle_system_app {
                 System.out.print("가격 입력: ");
                 price = Double.parseDouble(priceString);
             } catch (NumberFormatException e) {
-                System.out.println("⚠️ 가격은 숫자만 입력해주세요. (0으로 설정)");
+                System.out.println("⚠️ 가격은 숫자만 입력해주세요.");
+                break;
             }
 
             switch (choice) {
