@@ -35,15 +35,15 @@ public class Vehicle_system_app {
 
             switch (choice) {
                 case "1":
-                    vehicles.add(new car(brand, model, price));
+                    vehicles.add(new Car(brand, model, price));
                     System.out.println("자동차 정보가 추가되었습니다.");
                     break;
                 case "2":
-                    vehicles.add(new truck(brand, model, price));
+                    vehicles.add(new Truck(brand, model, price));
                     System.out.println("트럭 정보가 추가되었습니다.");
                     break;
                 case "3":
-                    vehicles.add(new motorcycle(brand, model, price));
+                    vehicles.add(new Motorcycle(brand, model, price));
                     System.out.println("오토바이 정보가 추가되었습니다.");
                     break;
                 default:

@@ -1,7 +1,7 @@
 // Car.java
-class car extends Vehicle  implements ElectricVehicle, FuelVehicle{
+class Car extends Vehicle  implements ElectricVehicle, FuelVehicle{
 
-    public car(String brand, String model, Double price) {
+    public Car(String brand, String model, Double price) {
         super(brand, model, price);
     }
 
