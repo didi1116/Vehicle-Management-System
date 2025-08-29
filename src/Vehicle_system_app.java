@@ -12,6 +12,7 @@ public class Vehicle_system_app {
             System.out.println("1. 자동차 | 2. 트럭 | 3. 오토바이 | 4. 종료 및 목록 출력");
             System.out.print("선택: ");
             String choice = input.nextLine();
+
             if (choice.equals("4")) {
                 break;
             }
@@ -20,15 +21,16 @@ public class Vehicle_system_app {
             String brand = input.nextLine();
             System.out.print("모델 입력: ");
             String model = input.nextLine();
-            System.out.print("가격 입력: ");
-            String priceString = input.nextLine();
-            Double price = 0.0;
-            try {
+
+            double price;
+            while (true) {
                 System.out.print("가격 입력: ");
-                price = Double.parseDouble(priceString);
-            } catch (NumberFormatException e) {
-                System.out.println(" 가격은 숫자만 입력해주세요.");
-                break;
+                try {
+                    price = Double.parseDouble(input.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.out.println("가격은 숫자만 입력해주세요.");
+                }
             }
 
             switch (choice) {
@@ -53,15 +55,13 @@ public class Vehicle_system_app {
 
         if (vehicles.isEmpty()) {
             System.out.println("등록된 차량이 없습니다.");
-        }
-        else {
+        } else {
             for (Vehicle vehicle : vehicles) {
                 System.out.println("---------------------------------");
                 vehicle.displayInfo();
-                vehicle.startEngine(); //다형성
-                vehicle.stopEngine(); //다형성
+                vehicle.startEngine();
+                vehicle.stopEngine();
             }
-
         }
         input.close();
     }
