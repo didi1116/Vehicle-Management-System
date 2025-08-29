@@ -5,4 +5,4 @@
 /httpRequests/
 
 
-!**/src/db.properties
+/src/db.properties
