@@ -1,5 +1,10 @@
 // Motorcycle.java
-class motorcycle extends Vehicle implements ElectricVehicle, FuelVehicle {
+class Motorcycle extends Vehicle implements ElectricVehicle, FuelVehicle {
+
+    public Motorcycle(String brand, String model, Double price) {
+        super(brand, model, price);
+    }
+
     @Override
     public void refuel() {
         System.out.println("기름을 주유합니다.");
@@ -9,10 +14,6 @@ class motorcycle extends Vehicle implements ElectricVehicle, FuelVehicle {
     public void charge() {
         System.out.println("배터리를 충전합니다.");
 
-    }
-
-    public motorcycle(String brand, String model, Double price) {
-        super(brand, model, price);
     }
 
     @Override
